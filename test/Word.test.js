@@ -6,7 +6,7 @@ describe('Word class', () => {
     const word = new Word('hi');
 
     expect(word.letters).toEqual(
-      expect.arrayContaining([expect.objectContaining({ char: 'h' })])
+      expect.arrayContaining([expect.objectContaining({ character: 'h' })])
     );
 
     expect(word.letters[0]).toBeInstanceOf(Letter);
